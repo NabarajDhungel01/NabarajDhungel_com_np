@@ -1,0 +1,152 @@
+p#hacking {
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  /* transition: 0.25s ease; */
+}
+p#p-coding {
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transition: 1s ease;
+}
+
+p#p-webdev{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transition: 1s ease;
+}
+
+.projects {
+  margin-top: 10rem;
+  margin: 2rem auto;
+}
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-width: 25vw ;
+    --card-height: calc(var(--card-width) / 1.5);
+  }
+  
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+  
+  .hacking-card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+
+  .hacking-card:hover .output-console {
+    opacity: 0.3;
+  }
+
+  .hacking-card:hover .hacker-3d-shiz {
+    opacity: 0.3;
+  }
+
+  .hacking-card:hover .bars-and-stuff {
+    opacity: 0.3;
+  }
+
+  .coding-card:hover .mac-wrapper{
+
+    opacity: 0.3;
+  }
+  
+  .coding-card:hover p#p-coding{
+    color: var(--h1-color);
+  }
+
+
+  .web-development:hover #webdev-animation{
+    opacity: 0.3;
+  }
+  
+  .web-development:hover p#p-webdev{
+    color: var(--h1-color);
+  }
+
+
+  
+
+
+  .card:hover:before,
+  .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  

@@ -1,0 +1,125 @@
+/* white moon */
+
+#moon {
+    display: block;
+    /* position: relative; */
+    box-shadow: 0px 0px 25px hsl(57, 95%, 92%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 5%;
+    right: 3%;
+    cursor: move;
+    background-color: #FEFCD7;
+    z-index: 10 !important;
+}
+
+#moon:active {
+    box-shadow: 0px 0px 35px #FEFCD7;
+}
+
+
+/* Animated Moon With Rocket */
+
+
+.loader {
+    position: absolute;
+    width: 12.5px;
+    height: 12.5px;
+    animation: infinite-spinning 4s infinite;
+    animation-timing-function: linear;
+    transform-origin: 237% 264%;
+    left: -20%;
+    top: -3%;
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.moon {
+    position: absolute;
+    left: 4%;
+    top: 70%;
+    margin: -25px;
+    width: 50px;
+    height: 50px;
+    background: #c7cbd0;
+    border-radius: 50%;
+    box-shadow: inset -6.25px 0px 0 0px #9098a1;
+    transition: transform 0.2s ease-in-out;
+}
+
+.moon:hover {
+    transform: scale(1.2);
+}
+
+.moon li {
+    position: absolute;
+    list-style: none;
+    background: #737277;
+    border-radius: 50%;
+}
+
+.moon li:nth-child(1) {
+    left: 6.25px;
+    top: 15px;
+    width: 12.5px;
+    height: 12.5px;
+    box-shadow: inset 1.5px -0.5px 0 0px #414043;
+}
+
+.moon li:nth-child(2) {
+    left: 37.5px;
+    top: 12.5px;
+    width: 6.25px;
+    height: 6.25px;
+    box-shadow: inset 0.75px -0.25px 0 0px #414043;
+}
+
+.moon li:nth-child(3) {
+    left: 25px;
+    top: 37.5px;
+    width: 6.25px;
+    height: 6.25px;
+    box-shadow: inset 0.75px -0.25px 0 0px #414043;
+}
+
+.moon li:nth-child(4) {
+    left: 12.5px;
+    top: 37.5px;
+    width: 3.125px;
+    height: 3.125px;
+    box-shadow: inset 0.6px -0.2px 0 0px #414043;
+}
+
+.moon li:nth-child(5) {
+    left: 21.875px;
+    top: 4.16666667px;
+    width: 3.125px;
+    height: 3.125px;
+    box-shadow: inset 0.6px -0.2px 0 0px #414043;
+}
+
+.moon li:nth-child(6) {
+    left: 28.57142857px;
+    top: 20px;
+    width: 3.125px;
+    height: 3.125px;
+    box-shadow: inset 0.6px -0.2px 0 0px #414043;
+}
+
+.moon li:nth-child(7) {
+    left: 45.45454545px;
+    top: 25px;
+    width: 3.125px;
+    height: 3.125px;
+    box-shadow: inset 0.6px -0.2px 0 0px #414043;
+}

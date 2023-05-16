@@ -1,0 +1,208 @@
+:root {
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+  }
+  
+  body {
+    line-height: 1.5;
+    /* background: var(--clr-body-bg); */
+    /* color: var(--clr-text); */
+  }
+
+  .color-picker{
+    position:fixed;
+    z-index:4;
+    right:1.55rem;
+    bottom:25%;
+  }
+
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* .color-picker::before {
+    content: "T\00000aH\00000aE\00000aM\00000aE\00000a";
+    content: "T\00000ah\00000ae\00000am\00000ae\00000a"; 
+    line-height:1.15rem;
+    white-space:pre;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: semi-bold;
+    position:fixed;
+    bottom:30%;
+    right:1.25rem;
+    color:white
+} */
+
+.color-picker >p {
+  line-height:0.85rem;
+  white-space:pre;
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position:fixed;
+  bottom:26%;
+  right:0.75rem;
+  color:white;
+  transition:0.5s ease;
+}
+.color-picker >p:hover{
+  transform:scale(1.5);
+  color:#e60000;
+}
+
+
+.color-picker > p > span{
+  font-size: 0.7rem;
+}
+
+.color-picker::before > * {
+    display: inline-block;
+    line-height: 1.2rem;
+}
+
+
+  
+  .color-picker > fieldset {
+    border: 0px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* set 2 columns*/
+    grid-template-rows: repeat(3, auto); /* set 3 rows */
+    gap: 1rem;
+    padding: 0.5rem;
+    margin-inline: auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  
+  .color-picker input[type=radio] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+  }
+.color-picker input[type=radio]:hover {
+  transform:scale(1.5);
+  cursor:pointer;
+  transition:0.3s ease-in-out;
+}
+  
+  .color-picker input[type=radio]:checked {
+    background-color: var(--radio-color);
+  }
+  
+  .color-picker input[type=radio]#light {
+    --radio-color: gray;
+  }
+  
+  .color-picker input[type=radio]#pink {
+    --radio-color: pink;
+  }
+  
+  .color-picker input[type=radio]#blue {
+    --radio-color: blue;
+  }
+  
+  .color-picker input[type=radio]#green {
+    --radio-color: green;
+  }
+
+  .color-picker input[type=radio]#yellow {
+    --radio-color: yellow;
+  }
+  
+  .color-picker input[type=radio]#dark {
+    --radio-color: #232323;
+  }
+  
+  .pink {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  .blue {
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-heading: hsl(209 50% 25%);
+  }
+  
+  .green {
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+  }
+  
+  .dark {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }
+
+  :root:has(#light:checked) {
+    --h1-color:white;
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+
+  
+  :root:has(#pink:checked) {
+    --h1-color:pink;
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  :root:has(#blue:checked) {
+    --h1-color:blue;
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-heading: hsl(209 50% 25%);
+  }
+  
+  :root:has(#green:checked) {
+    --h1-color:green;
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+  }
+
+  :root:has(#yellow:checked) {
+    --h1-color:yellow;
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+  }
+  
+  :root:has(#dark:checked) {
+    --h1-color:black;
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }

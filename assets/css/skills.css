@@ -1,0 +1,36 @@
+#skills {
+  min-height: 90vh;
+  border: 2px solid red;
+  margin-top: 20vh;
+}
+
+div#skills-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span#span1,
+span#span3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--h1-color);
+}
+span#span2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--h1-color);
+}
+.cards {
+  display: flex;
+  gap: 3rem;
+  margin-top: 12vh;
+}
+.cards .card {
+  margin: 2rem;
+}
+
+svg#webdev-animation {
+  padding: 0rem 3rem 1rem 1rem;
+}

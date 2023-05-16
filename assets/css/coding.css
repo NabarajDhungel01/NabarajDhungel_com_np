@@ -1,0 +1,390 @@
+.
+
+
+
+@-webkit-keyframes writeLine {
+    0% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+              clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+  }
+  @keyframes writeLine {
+    0% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+              clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+              clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+  }
+  @-webkit-keyframes keydown {
+    0% {
+      fill-opacity: 0.1;
+    }
+    15% {
+      fill-opacity: 0.3;
+    }
+    30% {
+      fill-opacity: 0.1;
+    }
+  }
+  @keyframes keydown {
+    0% {
+      fill-opacity: 0.1;
+    }
+    15% {
+      fill-opacity: 0.3;
+    }
+    30% {
+      fill-opacity: 0.1;
+    }
+  }
+  @-webkit-keyframes appOpen {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes appOpen {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  
+  .mac-wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+  }
+  .mac-wrapper svg {
+    height: auto;
+  }
+  .mac-wrapper svg #CodeEditorWindow {
+    display: none;
+  }
+  .mac-wrapper.start #CodeEditorWindow {
+    display: block;
+    animation: 0.5s ease-out 0s 1 normal forwards appOpen, 0.5s ease-out 27s 1 reverse forwards appOpen;
+    transform-origin: center center;
+  }
+  .mac-wrapper.start [id^=codeline] {
+    -webkit-clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+            clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    -webkit-animation: writeLine 1s linear forwards;
+            animation: writeLine 1s linear forwards;
+  }
+  .mac-wrapper.start #codeline1 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .mac-wrapper.start #codeline2 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .mac-wrapper.start #codeline3 {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .mac-wrapper.start #codeline4 {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+  }
+  .mac-wrapper.start #codeline5 {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+  }
+  .mac-wrapper.start #codeline6 {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+  .mac-wrapper.start #codeline7 {
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+  }
+  .mac-wrapper.start #codeline8 {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+  }
+  .mac-wrapper.start #codeline9 {
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+  }
+  .mac-wrapper.start #codeline10 {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+  }
+  .mac-wrapper.start #codeline11 {
+    -webkit-animation-delay: 11s;
+            animation-delay: 11s;
+  }
+  .mac-wrapper.start #codeline12 {
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+  }
+  .mac-wrapper.start #codeline13 {
+    -webkit-animation-delay: 13s;
+            animation-delay: 13s;
+  }
+  .mac-wrapper.start #codeline14 {
+    -webkit-animation-delay: 14s;
+            animation-delay: 14s;
+  }
+  .mac-wrapper.start #codeline15 {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+  }
+  .mac-wrapper.start #codeline16 {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+  }
+  .mac-wrapper.start #codeline17 {
+    -webkit-animation-delay: 17s;
+            animation-delay: 17s;
+  }
+  .mac-wrapper.start #codeline18 {
+    -webkit-animation-delay: 18s;
+            animation-delay: 18s;
+  }
+  .mac-wrapper.start #codeline19 {
+    -webkit-animation-delay: 19s;
+            animation-delay: 19s;
+  }
+  .mac-wrapper.start #codeline20 {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+  }
+  .mac-wrapper.start #codeline21 {
+    -webkit-animation-delay: 21s;
+            animation-delay: 21s;
+  }
+  .mac-wrapper.start #codeline22 {
+    -webkit-animation-delay: 22s;
+            animation-delay: 22s;
+  }
+  .mac-wrapper.start #codeline23 {
+    -webkit-animation-delay: 23s;
+            animation-delay: 23s;
+  }
+  .mac-wrapper.start #codeline24 {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+  }
+  .mac-wrapper.start #codeline25 {
+    -webkit-animation-delay: 25s;
+            animation-delay: 25s;
+  }
+  .mac-wrapper.start #codeline26 {
+    -webkit-animation-delay: 26s;
+            animation-delay: 26s;
+  }
+  .mac-wrapper.start #keyboard11 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1230ms;
+            animation-delay: 1230ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard42 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1045ms;
+            animation-delay: 1045ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard8 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1197ms;
+            animation-delay: 1197ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard39 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1034ms;
+            animation-delay: 1034ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard15 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1795ms;
+            animation-delay: 1795ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard37 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1899ms;
+            animation-delay: 1899ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard15 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1843ms;
+            animation-delay: 1843ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard36 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1337ms;
+            animation-delay: 1337ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard36 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1473ms;
+            animation-delay: 1473ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard7 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1306ms;
+            animation-delay: 1306ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard17 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1780ms;
+            animation-delay: 1780ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard4 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1056ms;
+            animation-delay: 1056ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard19 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1144ms;
+            animation-delay: 1144ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard36 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1077ms;
+            animation-delay: 1077ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard21 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1452ms;
+            animation-delay: 1452ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard12 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1650ms;
+            animation-delay: 1650ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard15 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1769ms;
+            animation-delay: 1769ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard43 {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1795ms;
+            animation-delay: 1795ms;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }
+  .mac-wrapper.start #keyboard-return {
+    -webkit-animation-name: keydown;
+            animation-name: keydown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-iteration-count: 26;
+            animation-iteration-count: 26;
+  }

@@ -1,0 +1,114 @@
+.col-md-12.justify-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-text {
+  position: relative;
+  z-index: 1;
+}
+
+.iam {
+  color: white;
+  font-size: 55px;
+  padding: 15px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.text {
+  /* color: white; */
+  border-right: 2px solid var(--h1-color);
+  font-size: 55px;
+  font-family: sans-serif;
+  /*color: rgb(255, 30, 0);*/
+  color: var(--h1-color);
+  display: inline-block;
+  
+}
+
+/*  Decode  Text Css*/
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+.decode-text {
+  /*width: 100%;*/
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.space {
+  display: inline-block;
+  width: 10px;
+}
+
+.text-animation {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.text-animation:before {
+  content: "";
+  /*color: black;*/
+  color: var(--h1-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #0e182d;
+  width: 0;
+  height: 1.2em;
+  -webkit-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+}
+
+.text-animation.state-1:before {
+  width: 1px;
+}
+
+.text-animation.state-2:before {
+  width: 0.9em;
+}
+
+.text-animation.state-3 {
+  /*color: black;*/
+  color: var(--h1-color);
+}
+
+.text-animation.state-3:before {
+  width: 0;
+}
+
+#refresh {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.decode-text div {
+  font-family: "Share Tech Mono", monospace;
+}

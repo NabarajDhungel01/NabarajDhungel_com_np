@@ -1,0 +1,45 @@
+.credits{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.credits footer {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  text-align: right;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  /* white-space: nowrap; */
+}
+
+.credits footer p {
+  border: none;
+  padding: 0;
+}
+
+.credits footer p strong {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.credits footer p strong:hover {
+  color: #e60000;
+  transition: all 0.4s ease-in-out;
+  font-weight: 1500;
+  font-size: 4em;
+}
+
+.credits footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.9s ease-in-out;
+}
+
+.credits footer a:hover {
+  color: #ff2222;
+  font-weight: 900;
+  font-size: 1.5em;
+}
